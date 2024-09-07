@@ -2629,6 +2629,12 @@ body{
   text-align: center;
 }
 
+@media not all and (min-width: 768px){
+  .max-md\:gap-4{
+    gap: 1rem;
+  }
+}
+
 @media (min-width: 640px){
   .sm\:underline{
     text-decoration-line: underline;
