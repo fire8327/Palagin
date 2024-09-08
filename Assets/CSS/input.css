@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 body{
-    @apply flex flex-col min-h-screen Montserrat text-[21px]
+    @apply flex flex-col min-h-screen Montserrat text-base md:text-lg xl:text-[21px]
 }
     
 :root{
