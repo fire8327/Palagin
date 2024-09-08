@@ -31,10 +31,6 @@ body{
     @apply mr-auto max-w-[var(--widthContent)]
 }
 
-.container{        
-    @apply max-w-[var(--widthContent)]
-} 
-
 .Montserrat {
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
