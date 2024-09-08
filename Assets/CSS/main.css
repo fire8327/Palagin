@@ -2671,18 +2671,6 @@ body{
 }
 
 @media (min-width: 1280px){
-  .xl\:w-24{
-    width: 6rem;
-  }
-
-  .xl\:w-\[\]{
-    width: ;
-  }
-
-  .xl\:w-\[7\%\]{
-    width: 7%;
-  }
-
   .xl\:w-32{
     width: 8rem;
   }
@@ -2705,6 +2693,12 @@ body{
   .\32xl\:px-32{
     padding-left: 8rem;
     padding-right: 8rem;
+  }
+}
+
+@media (min-width: 1920px){
+  .min-\[1920px\]\:w-40{
+    width: 10rem;
   }
 }
 
