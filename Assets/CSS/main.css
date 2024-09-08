@@ -2542,42 +2542,6 @@ body{
   }
 }
 
-:root{
-  /* максимальная ширина контента */
-  --widthContent: 1200px;
-  --widthContentMargin: 16px
-}
-
-@media (min-width: 768px){
-  :root{
-    --widthContentMargin: 20px;
-  }
-}
-
-@media (min-width: 1280px){
-  :root{
-    --widthContentMargin: 30px;
-  }
-}
-
-/* Настройка кастомных контейнеров */
-
-/* Применение системы гридов для расположения контента в ячейку main или full или в любую другую ячейку между именованными линиями grid*/
-
-.grid-container{
-  grid-template-columns: [full-start] minmax(var(--widthContentMargin), 1fr) [main-start] minmax(0, var(--widthContent)) [main-end] minmax(var(--widthContentMargin), 1fr) [full-end];
-  display: grid
-}
-
-.grid-container>*{
-  grid-column: main;
-}
-
-.wrapper{
-  margin-right: auto;
-  max-width: var(--widthContent);
-}
-
 .Montserrat {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;

@@ -7,29 +7,6 @@
 body{
     @apply flex flex-col min-h-screen Montserrat text-base md:text-lg xl:text-[21px]
 }
-    
-:root{
-    /* максимальная ширина контента */
-    @apply [--widthContent:1200px]
-    /* Растояние от границы брузера по бокам */
-    [--widthContentMargin:16px] md:[--widthContentMargin:20px] xl:[--widthContentMargin:30px]
-}    
-
-/* Настройка кастомных контейнеров */
-/* Применение системы гридов для расположения контента в ячейку main или full или в любую другую ячейку между именованными линиями grid*/
-
-.grid-container{        
-    grid-template-columns: [full-start] minmax(var(--widthContentMargin), 1fr) [main-start] minmax(0, var(--widthContent)) [main-end] minmax(var(--widthContentMargin), 1fr) [full-end];
-    @apply grid
-}
-
-.grid-container>*{        
-    @apply col-[main]
-}    
-
-.wrapper{ 
-    @apply mr-auto max-w-[var(--widthContent)]
-}
 
 .Montserrat {
     font-family: "Montserrat", sans-serif;
